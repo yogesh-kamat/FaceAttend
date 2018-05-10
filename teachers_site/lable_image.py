@@ -1,5 +1,5 @@
 # This requires retrained_labels.txt and retrained_graph.pb files which are available at this link.
-# https://drive.google.com/file/d/1TMCTLEqekAh1zMwdSfWFxMKNKYyfgIYB/view?usp=sharing
+# https://drive.google.com/open?id=1TMCTLEqekAh1zMwdSfWFxMKNKYyfgIYB
 # https://drive.google.com/open?id=1d93B2ehbxrpbAhm7OqtvgDT5Mszk4_jc
 
 # Change both file path accordingly.
