@@ -4,7 +4,7 @@ Project contains two webapp's developed using flask webframwork and python3.(htt
 
 Database used : MySQL community edition.
 
-For face reocognition I used python3 "face_recogntion" by ageitgey.(https://github.com/ageitgey/face_recognition)
+For face reocognition I used python3 "face_recogntion" by ageitgey.(https://github.com/ageitgey/face_recognition), Built using dlib's state-of-the-art face recognition built with deep learning. The model has an accuracy of 99.38% on the Labeled Faces in the Wild benchmark.
 
 For spoof detection I used tensorflow inception model by retraining it's last layer so that it can detect mobile phones in an image.(https://www.tensorflow.org/tutorials/image_recognition)
 
