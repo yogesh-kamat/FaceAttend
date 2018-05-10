@@ -2,7 +2,7 @@
 # https://drive.google.com/file/d/1TMCTLEqekAh1zMwdSfWFxMKNKYyfgIYB/view?usp=sharing
 # https://drive.google.com/open?id=1d93B2ehbxrpbAhm7OqtvgDT5Mszk4_jc
 
-# Chage both file path then accordingly.
+# Change both file path accordingly.
 
 import tensorflow as tf,sys
 import os
