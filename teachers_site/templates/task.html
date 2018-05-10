@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=0.6">
+		<title>Faculty: Task</title>
+		<style type="text/css">
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Arial';
+            }
+            .mainHeading{
+                text-align: center;
+                background-color: #6940bc;
+                color: #fff;
+                font-family: 'Times New Roman';
+                padding: 10px;
+            }
+            .wrap h2{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .wrap{
+                width: 410px;
+                overflow: hidden;
+                margin: auto;
+                margin-top: 120px;
+                padding: 20px;
+                background: #fff;
+                border:1px solid silver;
+                border-radius: 5px;
+            }
+            .wrap .btn-login{
+                padding: 5px;
+                width: 412px;
+                height:40px;
+                background-color: #55add6;
+                color: #fff;
+                border:0;
+                border-radius: 7px;
+                font-size: 18px;
+            }
+        </style>
+	</head>
+
+
+	<body>
+		<div class="mainHeading">
+            <h1>Attendance Monitoring System</h1>
+        </div>
+    <div class="wrap">
+		<h2>Welcome {{uname}}</h2>
+		<form action="/upload_redirect" method="post">
+			<input type="submit" class="btn-login" value="Attendance">
+		</form>
+		<br>
+		<form action="/view_report" method="post">
+			<input type="submit" class ="btn-login" value="View Report">
+		</form>
+		<br>
+		<form action="/logout" method="post">
+			<input type="submit" class = "btn-login" name="logout" value="Logout">
+		</form>
+	</div>
+	</body>
+</html>

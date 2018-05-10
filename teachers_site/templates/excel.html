@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Faculty: View Report</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.6">
+	<style type="text/css">
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Arial';
+            }
+            .mainHeading{
+                text-align: center;
+                background-color: #6940bc;
+                color: #fff;
+                font-family: 'Times New Roman';
+                padding: 10px;
+            }
+            .wrap h2{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .wrap{
+                width: 410px;
+                overflow: hidden;
+                margin: auto;
+                margin-top: 120px;
+                padding: 20px;
+                background: #fff;
+                border:1px solid silver;
+                border-radius: 5px;
+            }
+            .wrap input[type="text"]{
+                width:400px;
+                height: 35px;
+                margin-bottom: 10px;
+                border-radius: 8px;
+                border: 1px solid silver;
+                padding: 5px;
+            }
+            .wrap .btn-login{
+                margin-top: 5px;
+                padding: 5px;
+                width: 412px;
+                height:40px;
+                background-color: #55add6;
+                color: #fff;
+                border:0;
+                border-radius: 8px;
+                font-size: 18px;
+            }
+            input[type=date]{ 
+                margin-top:5px;
+                padding: 5px;
+                width: 180px; 
+                height: 20px;
+                border: 1px solid silver; 
+                border-radius: 8px;
+                float: left;
+            }
+            input[type=time]{
+            	margin-top:5px;
+                padding: 5px;
+                width: 200px; 
+                height: 20px;
+                border: 1px solid silver; 
+                border-radius: 8px;
+                float: right;
+            }
+            input[type=file] { 
+                margin-top:5px;
+                padding: 5px;
+                width: 400px; 
+                height: 20px;
+                border: 1px solid silver; 
+                border-radius: 8px;
+            }
+            .btnfinal{
+                padding: 5px;
+                width: 200px;
+                height:40px;
+                background-color: #55add6;
+                color: #fff;
+                border:0;
+                border-radius: 7px;
+                font-size: 18px;
+                float: left;
+            }     
+        </style>
+	</head>
+</head>
+<body>
+	<div class="mainHeading">
+		<h1>Attendance Monitoring System</h1>
+        </div>
+	<div class="wrap">
+	<h2>View Report</h2>
+	<form method="post">
+		<h3>Today's Result<h3>
+		<input type="date" name="fname" required="required">
+		<input type="time" style="width: 200px;float: right;" name="ftime" value="09:00" required="required">
+		<br><br><br>
+		<input type="text" name="folder_name" placeholder="Enter class here" required="required">
+		<br>
+		<input type="submit" class="btn-login" formaction="/view" value="View Excel" formtarget="_blank">
+        <input type="submit" class="btn-login" formaction="/send_mail" name="email" value="Send Mail" formtarget="_blank">
+		</form>	
+        <br><br>
+		<h3>Update Attendance<h3>
+		<form action="/update" method="post" enctype="multipart/form-data">
+			<input type="file" name="updated_excel" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" required="required">
+			<br><br>
+			<input type="text" name="excel_folder" placeholder="Enter class here" required="required">
+			<input type="submit" class="btn-login" value="Update excel">
+		</form>
+        <p style="font-weight: normal;font-size: 10px;">{{msg}}</p>
+
+        <form action="/calculate" method="post" target="_blank">
+			<h3>Check overall result</h3>
+			<input type="text" name="final_class" placeholder="Enter class here" required="required">
+			<input type="submit" class="btn-login" value="Calculate">
+		</form>
+        <p style="font-weight: normal;font-size: 10px">{{msg1}}</p>
+        <form action="/changetask" method="post">
+            <input type="submit" class="btnfinal" name="chtask" value="Back">
+        </form>
+        <form action="/logout" method="post">
+            <input style="width: 200px;float: right;" type="submit" class="btnfinal" name="logout" value="Logout">
+        </form>
+</div>
+</body>
+</html>
