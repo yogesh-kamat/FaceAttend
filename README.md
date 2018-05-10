@@ -13,6 +13,7 @@ To generate and manage excel I used xlrx and xlrd and pandas.
 For sending email's I used flask-mail.(https://pythonhosted.org/Flask-Mail/)
 
 admin site dependency : flask, mysqlclient, sklearn, numpy, scipy, pillow, dlib, face_recognition
+
 teachers site dependency : flask_bootstrap, pytz, xlsxwriter, pandas, flask_mail, tensorflow,xlrd  
 
 There are mainly two webapps for this project one is say admin site and other one is teacher's site.
