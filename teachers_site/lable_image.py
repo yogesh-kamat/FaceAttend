@@ -1,3 +1,7 @@
+# This requires retrained_labels.txt and retrained_graph.pb files which are available at this link.
+
+# Chage both file path then accordingly.
+
 import tensorflow as tf,sys
 import os
 
