@@ -1,10 +1,15 @@
 # Face-recognition-based-attendance-system
 
 Project contains two webapp's developed using flask webframwork and python3.(http://flask.pocoo.org/)
+
 Database used : MySQL community edition.
+
 For face reocognition I used python3 "face_recogntion" by ageitgey.(https://github.com/ageitgey/face_recognition)
+
 For spoof detection I used tensorflow inception model by retraining it's last layer so that it can detect mobile phones in an image.(https://www.tensorflow.org/tutorials/image_recognition)
+
 To generate and manage excel I used xlrx and xlrd and pandas. 
+
 For sending email's I used flask-mail.(https://pythonhosted.org/Flask-Mail/)
 
 admin site dependency : flask, mysqlclient, sklearn, numpy, scipy, pillow, dlib, face_recognition
