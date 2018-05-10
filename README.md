@@ -27,4 +27,3 @@ Now after student's part is done. Teacher can then login again and then go to re
 If teacher want to see todays attendace, just selecte date and time to see the attendance. and there is also option to download and upload the excel to do any changes if sometime required. And teacher can also see total attendance for his or her lecture. so that they can analyze how many lectures each student from particular class had attended so far.
 
 One additional feature is that teacher can send email to all the parents by selecting class and clicking on send mail button.
-
