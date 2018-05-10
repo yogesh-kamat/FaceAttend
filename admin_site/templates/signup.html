@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=0.6">
+		<title>Admin: {{title}}</title>
+		<style type="text/css">
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Arial';
+            }
+            .mainHeading{
+                text-align: center;
+                background-color: #6940bc;
+                color: #fff;
+                font-family: 'Times New Roman';
+                padding: 10px;
+            }
+            .wrap h2{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .wrap{
+                width: 410px;
+                overflow: hidden;
+                margin: auto;
+                margin-top: 120px;
+                padding: 20px;
+                background: #fff;
+                border:1px solid silver;
+                border-radius: 5px;
+            }
+            .wrap input[type="text"],input[type="password"]{
+                width:400px;
+                height: 35px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                border: 1px solid silver;
+                padding: 5px;
+            }
+            .wrap .btn-login{
+                padding: 5px;
+                width: 412px;
+                height:40px;
+                background-color: #55add6;
+                color: #fff;
+                border:0;
+                border-radius: 7px;
+                font-size: 18px;
+            }
+            .btnfinal{
+            	padding: 5px;
+                width: 200px;
+                height:40px;
+                background-color: #55add6;
+                color: #fff;
+                border:0;
+                border-radius: 7px;
+                font-size: 18px;
+                float: left;
+            }      
+        </style>
+	</head>
+
+
+	<body>
+		<div class="mainHeading">
+            <h1>Attendance Monitoring System</h1>
+        </div>
+        <div class="wrap">
+        <h2>{{title}}</h2>
+		<form action="/signup_teacher" method="post">
+			<input type="text" name="user" placeholder="username" required="required">
+			<input type="password" name="password" placeholder="password" required="required">
+            <input type="text" name="email" placeholder="email" required="required">
+			<input type="submit" class="btn-login" value="SignUp">
+			<p>{{uname}} {{msg}}</p>
+		</form>
+		<form action="/changetask" method="post">
+			<input type="submit" class="btnfinal" name="chtask" value="Back">
+		</form>
+		<form action="/logout" method="post">
+			<input style="width: 200px;float: right;" type="submit" class="btnfinal" name="logout" value="Logout">
+		</form>
+		</div>
+	</body>
+</html>
