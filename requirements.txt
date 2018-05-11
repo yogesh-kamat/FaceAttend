@@ -1,0 +1,15 @@
+flask
+mysqlclient
+sklearn
+numpy
+scipy
+pillow
+dlib
+face_recognition
+flask_bootstrap
+pytz
+xlsxwriter
+pandas
+flask_mail
+tensorflow
+xlrd
