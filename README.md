@@ -35,6 +35,6 @@ To download 200 images at once use fatkun-batch-download chrome extension.
 
 Now after student's part is done. Teacher can then login again and then go to report's tab to see attendance. Here there are several option's I have given.
 
-If teacher want to see todays attendace, just select date and time to see the attendance. And there is also an option to download the attendace sheet in excel form and then again reupload it after making any changes if sometime required by the teacher. And the teacher can also see total attendance for his or her lecture. so that they can analyze how many lectures each student from particular class had attended so far.
+If teacher want to see today's attendace, just select date and time to see the attendance. And there is also an option to download the attendace sheet in excel form and then again reupload it after making any changes if sometime required by the teacher. And the teacher can also see total attendance for his or her lecture. so that they can analyze how many lectures each student from particular class had attended so far.
 
 One additional feature is that teacher can send email for the attendance marked to all the parents as well as students by selecting class and clicking on send mail button.
