@@ -1,8 +1,7 @@
+# Face-recognition-based-attendance-system
+
 Detail project working here...
 https://www.youtube.com/watch?v=0ADsRSF_MHw&t=9s
-
-
-# Face-recognition-based-attendance-system
 
 Project contains two webapp's developed using flask webframwork and python3.(http://flask.pocoo.org/)
 
