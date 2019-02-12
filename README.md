@@ -3,7 +3,7 @@
 Detail project working here...
 https://www.youtube.com/watch?v=0ADsRSF_MHw&t=9s
 
-Project contains two webapp's developed using flask webframwork and python3.(http://flask.pocoo.org/)
+Project contains two webapp's developed using flask and python3.(http://flask.pocoo.org/)
 
 Database used : MySQL community edition.
 
